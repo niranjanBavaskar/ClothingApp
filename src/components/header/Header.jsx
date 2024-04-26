@@ -1,26 +1,101 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
+import { NavLink } from "react-router-dom";
 import "./header.module.css";
-import { CiSearch } from "react-icons/ci";
+import { IoIosSearch } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 
 export const Header = () => {
-  const [menu, setMenu]= useState("home");
+  const [menu, setMenu] = useState("home");
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
-        <p>shopper</p>
+        <p style={{ fontWeight: "700", fontSize: "large" }}>ALLSTAG</p>
       </div>
       <div className={styles.menu}>
-        <li onClick={()=>{setMenu("home")}}>HOME {menu==="home"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("shop all")}}>SHOP ALL {menu==="shop all"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("collections")}}>COLLECTIONS {menu==="collections"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("contact us")}}>CONTACT US {menu==="contact us"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("track your order")}}>TRACK YOUR ORDER {menu==="track your order"?<hr/>:<></>}</li>
+        <li
+          onClick={() => {
+            setMenu("home");
+          }}
+        >
+          <NavLink style={{ textDecoration: "none", color: " black" }} to="/">
+            HOME
+          </NavLink>
+          {menu === "home" ? <hr /> : <></>}
+        </li>
+        <li
+          onClick={() => {
+            setMenu("shopAll");
+          }}
+        >
+          <NavLink
+            style={{ textDecoration: "none", color: " black" }}
+            to="/shopAll"
+          >
+            SHOP ALL
+          </NavLink>
+          {menu === "shopAll" ? <hr /> : <></>}
+        </li>
+        <li
+          onClick={() => {
+            setMenu("collections");
+          }}
+        >
+          <NavLink
+            style={{ textDecoration: "none", color: " black" }}
+            to="/collections"
+          >
+            COLLECTIONS
+          </NavLink>
+          {menu === "collections" ? <hr /> : <></>}
+          {/* <div className={styles.subMenu}>
+            <li style={{ textDecoration: "none" }}>Oversize T-shirt</li>
+            <hr style={{ background: "grey" }} />
+            <li style={{ textDecoration: "none" }}>T-shirt</li>
+            <hr style={{ background: "grey" }} />
+            <li style={{ textDecoration: "none" }}>T-shirts</li>
+            <hr style={{ background: "grey" }} />
+            <li style={{ textDecoration: "none" }}>Shorts</li>
+            <hr style={{ background: "grey" }} />
+            <li style={{ textDecoration: "none" }}>Tanks</li>
+          </div> */}
+        </li>
+
+        <li
+          onClick={() => {
+            setMenu("contactUs");
+          }}
+        >
+          <NavLink
+            style={{ textDecoration: "none", color: " black" }}
+            to="/contactUs"
+          >
+            CONTACT US
+          </NavLink>
+          {menu === "contactUs" ? <hr /> : <></>}
+        </li>
+        <li
+          onClick={() => {
+            setMenu("trackYourOrder");
+          }}
+        >
+          <NavLink
+            style={{ textDecoration: "none", color: " black" }}
+            to="/trackYourOrder"
+          >
+            TRACK YOUR ORDER
+          </NavLink>
+          {menu === "trackYourOrder" ? <hr /> : <></>}
+        </li>
       </div>
       <div className={styles.loginCart}>
-        <CiSearch />
-        <IoCartOutline />
+        <NavLink style={{ textDecoration: "none", color: " black" }} to="/search">
+        <IoIosSearch />
+        </NavLink>
+
+        <NavLink style={{ textDecoration: "none", color: " black" }} to="/cart">
+          <IoCartOutline />
+        </NavLink>
         <div className={styles.counter}>0</div>
       </div>
     </div>

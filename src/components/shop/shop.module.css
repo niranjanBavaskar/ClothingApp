@@ -1,0 +1,240 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  all: unset;
+}
+
+.shopContainer {
+  height: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  height: 600px;
+  border: 1px solid;
+  width: 20%;
+  border: 1px solid;
+}
+
+.right {
+  height: auto;
+  width: 70%;
+  border: 1px solid red;
+}
+
+.Filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.sortBy {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.shopAll {
+  display: flex;
+/* align-items: center;
+justify-content: center; */
+  flex-wrap: wrap;
+}
+
+.shopAll img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 230px;
+  margin: 5px;
+
+  /* border: 1px solid;
+    margin: 2px;  */
+  object-fit: cover;
+}
+
+.blackTshirt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blackTshirt a {
+  text-decoration: none;
+}
+
+.blackTshirt a:hover {
+  text-decoration: underline;
+}
+
+.beigeTshirt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.beigeTshirt a {
+  text-decoration: none;
+}
+
+.beigeTshirt a:hover {
+  text-decoration: underline;
+}
+
+.blackFull {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blackFull a {
+  text-decoration: none;
+}
+
+.blackFull a:hover {
+  text-decoration: underline;
+}
+
+.blackOversize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blackOversize a {
+  text-decoration: none;
+}
+
+.blackOversize a:hover {
+  text-decoration: underline;
+}
+
+.whiteTshirt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.whiteTshirt a {
+  text-decoration: none;
+}
+
+.whiteTshirt a:hover {
+  text-decoration: underline;
+}
+
+.blackPrint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blackPrint a {
+  text-decoration: none;
+}
+
+.blackPrint a:hover {
+  text-decoration: underline;
+}
+
+.whiteMen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.whiteMen a {
+  text-decoration: none;
+}
+
+.whiteMen a:hover {
+  text-decoration: underline;
+}
+
+.whitevest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.whitevest a {
+  text-decoration: none;
+}
+
+.whitevest a:hover {
+  text-decoration: underline;
+}
+
+.brownOversize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.brownOversize a {
+  text-decoration: none;
+}
+
+.brownOversize a:hover {
+  text-decoration: underline;
+}
+
+.backPrint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.backPrint a {
+  text-decoration: none;
+}
+
+.backPrint a:hover {
+  text-decoration: underline;
+}
+
+.whitePrint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.whitePrint a {
+  text-decoration: none;
+}
+
+.whitePrint a:hover {
+  text-decoration: underline;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

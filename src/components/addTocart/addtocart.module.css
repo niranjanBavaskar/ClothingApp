@@ -1,0 +1,28 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addToCartContainer {
+    height: auto;
+    width: 90%;
+}
+
+.left {
+    height: auto;
+    width: 20%;
+}
+
+.center {
+    height: auto;
+    width: 30%;
+}
+
+.right {
+    height: auto;
+    width: 40%;
+}
+
+
+

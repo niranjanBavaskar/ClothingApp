@@ -1,13 +1,13 @@
 .navbar {
-  height: 60px;
+  height: 10%;
   width: 100%;
-  border-bottom: 1px solid;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
+
 
 .menu {
   display: flex;
@@ -15,7 +15,6 @@
   justify-content: center;
   list-style: none;
   gap: 25px;
-  color: black;
   font-weight: 600;
 }
 
@@ -23,18 +22,30 @@
   cursor: pointer;
 }
 
-.menu li:hover{
-    color: #626262;
+.menu hr {
+  height: 2px;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  background: #f14141;
 }
 
-.menu hr {
-    height: 2px;
-    width: 80%;
-    border: none;
-    border-radius: 10px;
-    background: #f14141;
-    
-    
+.subMenu {
+  position: absolute;
+  background-color: white;
+  top: 70px;
+  visibility: hidden;
+}
+
+.subMenu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li:hover.subMenu li {
+  visibility: visible;
 }
 
 .loginCart {
