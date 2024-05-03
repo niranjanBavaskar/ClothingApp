@@ -48,17 +48,15 @@ export const Header = () => {
             COLLECTIONS
           </NavLink>
           {menu === "collections" ? <hr /> : <></>}
-          {/* <div className={styles.subMenu}>
+          <div className={styles.subMenu}>
             <li style={{ textDecoration: "none" }}>Oversize T-shirt</li>
-            <hr style={{ background: "grey" }} />
-            <li style={{ textDecoration: "none" }}>T-shirt</li>
-            <hr style={{ background: "grey" }} />
+            <hr style={{ backgroundColor: "black" }} />
             <li style={{ textDecoration: "none" }}>T-shirts</li>
-            <hr style={{ background: "grey" }} />
+            <hr style={{ backgroundColor: "black" }} />
             <li style={{ textDecoration: "none" }}>Shorts</li>
-            <hr style={{ background: "grey" }} />
+            <hr style={{ backgroundColor: "black" }} />
             <li style={{ textDecoration: "none" }}>Tanks</li>
-          </div> */}
+          </div>
         </li>
 
         <li
@@ -89,8 +87,11 @@ export const Header = () => {
         </li>
       </div>
       <div className={styles.loginCart}>
-        <NavLink style={{ textDecoration: "none", color: " black" }} to="/search">
-        <IoIosSearch />
+        <NavLink
+          style={{ textDecoration: "none", color: " black" }}
+          to="/search"
+        >
+          <IoIosSearch />
         </NavLink>
 
         <NavLink style={{ textDecoration: "none", color: " black" }} to="/cart">

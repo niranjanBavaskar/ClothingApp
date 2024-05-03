@@ -8,7 +8,6 @@
   padding-right: 30px;
 }
 
-
 .menu {
   display: flex;
   align-items: center;
@@ -31,20 +30,19 @@
 }
 
 .subMenu {
+  height: 150px;
+  width: 200px;
   position: absolute;
-  background-color: white;
-  top: 70px;
+  background-color: rgba(255, 255, 255, 0.953);
+  top: 60px;
   visibility: hidden;
-}
-
-.subMenu li {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
-.menu li:hover.subMenu li {
+.menu li:hover.subMenu {
   visibility: visible;
 }
 

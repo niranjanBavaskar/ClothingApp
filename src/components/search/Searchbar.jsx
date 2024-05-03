@@ -12,12 +12,13 @@ export const Searchbar = () => {
           <RxCross2 style={{ fontSize: "25px" }} />
         </div>
         <div className={styles.searchBar}>
-          <p>Search</p>
+          <input type="text" placeholder="Search" style={{fontWeight: "500", fontSize: "15px"}}/>
           <IoIosSearch style={{ fontSize: "25px" }} />
         </div>
-        <hr />
+        <div className={styles.line}>
+          <hr style={{ margin: "auto", color: "grey" }} />
+        </div>
       </div>
-      
     </div>
   );
 };
