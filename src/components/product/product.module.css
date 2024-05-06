@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.summerContainer {
+.productContainer {
   height: auto;
   width: 90%;
   /* padding-top: 10px; */
@@ -35,7 +35,24 @@
   cursor: pointer;
 }
 
-.blackTshirt {
+
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.title:hover {
+  text-decoration: underline;
+ 
+}
+
+
+
+/* .blackTshirt {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,7 +215,7 @@
 
 .whitePrint a:hover {
   text-decoration: underline;
-}
+} */
 
 /* .bottom {
   height: auto;
@@ -214,5 +231,5 @@
 .gallary img {
   width: 32%;
   margin: 2px;
-}
- */
+} */
+

@@ -21,9 +21,6 @@
   height: 40px;
   width: 100%;
   border: none;
-  
- 
-  
 }
 
 .cancel {
@@ -31,7 +28,6 @@
   align-items: center;
   justify-content: flex-end;
   padding-top: 20px;
-  
 }
 
 .searchBar {

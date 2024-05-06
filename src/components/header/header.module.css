@@ -35,15 +35,22 @@
   position: absolute;
   background-color: rgba(255, 255, 255, 0.953);
   top: 60px;
-  visibility: hidden;
+  display: none;
+ 
+  
+}
+
+.subMenu li {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  
+
 }
 
-.menu li:hover.subMenu {
-  visibility: visible;
+.menu li:hover .subMenu {
+  display: block;
 }
 
 .loginCart {
