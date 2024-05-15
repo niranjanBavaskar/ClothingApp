@@ -7,7 +7,6 @@ export const Product = () => {
   return (
     <div className={styles.main}>
       <div className={styles.productContainer}>
-        {/* <div className={styles.summer}> */}
         <p style={{ fontWeight: "600", fontSize: "x-large", color: "black" }}>
           SUMMER COLLECTIONS
         </p>
@@ -150,6 +149,6 @@ export const Product = () => {
       </div>
     </div>
 
-    // </div>
+    
   );
 };

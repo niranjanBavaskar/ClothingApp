@@ -9,31 +9,45 @@ import { Footer } from "../footer/Footer";
 export const Shop = () => {
   return (
     <div className={styles.main}>
-      <Header/>
+      <Header />
       <div className={styles.shopContainer}>
         <div className={styles.left}>
           <div className={styles.category}>
-          <p>CATEGORIS</p>
-          <FaAngleDown />
+            <p style={{ fontWeight: "600" }}>CATEGORIS</p>
+            <FaAngleDown />
+            
           </div>
           <hr />
+          
+
           <div className={styles.availability}>
-            <p>AVIALABILITY</p>
+            <p style={{ fontWeight: "600" }}>AVAILABILITY</p>
             <FaAngleUp />
           </div>
           <hr />
-
         </div>
         <div className={styles.right}>
           <p style={{ fontSize: "x-large", fontWeight: "700" }}>ALL PRODUCTS</p>
           <hr />
           <div className={styles.Filters}>
             <div className={styles.filter}>
-              <p>VIEW AS</p>
+              <p style={{ fontWeight: "600" }}>VIEW AS</p>
             </div>
             <div className={styles.sortBy}>
-              <p>ITEMS PER PAGE</p>
-              <p>SORT BY</p>
+              <div className={styles.itemsPerPage}>
+                <p>ITEMS PER PAGE</p>
+                <div className={styles.square}>
+                  20
+                  <FaAngleDown style={{ fontSize: "13" }} />
+                </div>
+              </div>
+              <div className={styles.sort}>
+                <p>SORT BY</p>
+                <div className={styles.featured}>
+                  Featured
+                  <FaAngleDown style={{ fontSize: "13" }} />
+                </div>
+              </div>
             </div>
           </div>
           <div className={styles.shopAll}>
@@ -196,6 +210,5 @@ export const Shop = () => {
       </div>
       <Footer />
     </div>
-   
   );
 };
