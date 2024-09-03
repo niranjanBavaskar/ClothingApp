@@ -3,8 +3,7 @@ const items = [
     id: 1,
     category: "t-shirt",
     title: "Black T-Shirt",
-    img: "\public\images\blackMen.avif",
-   
+    img: ".images\blackMen.avif",
     price: "999.00",
   },
 
